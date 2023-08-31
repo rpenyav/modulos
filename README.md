@@ -1,5 +1,9 @@
 
 
+# Microfronted con single-spa-angular
+
+By rafa@rafapenya.com
+
 ## Crear la aplicacion host o aplicacion base
 
 1. instalar **create-single-spa**
