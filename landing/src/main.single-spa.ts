@@ -11,7 +11,7 @@ import {
 import { AppModule } from './app/app.module';
 //import { environment } from './environments/environment';
 import { singleSpaPropsSubject } from './single-spa/single-spa-props';
-
+import '../../estilos/index.scss';
 // if (environment.production) {
 //   enableProdMode();
 // }
