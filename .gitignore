@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ignorar el directorio 'modulospa'
+modulospa/

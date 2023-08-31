@@ -1,25 +1,21 @@
-<single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
-
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
-
-  <main>
-    <route default>
-      <application name="@rpenya/modulospa"></application>
-    </route>
-  </main>
+<single-spa-router
+  ><div>
+    <nav>
+      <application name="@rpenya/navigation"></application>
+    </nav>
+    <main>
+      <route default>
+        <application name="@rpenya/landing"></application>
+      </route>
+      <route path="landing">
+        <application name="@rpenya/landing"></application>
+      </route>
+      <route path="venta">
+        <application name="@rpenya/venta"></application>
+      </route>
+      <route path="alquiler">
+        <application name="@rpenya/alquiler"></application>
+      </route>
+    </main>
+  </div>
 </single-spa-router>

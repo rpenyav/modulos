@@ -9,7 +9,12 @@
     "prepare": "husky install",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
-    "build:types": "tsc"
+    "build:types": "tsc",
+    "start-all": "concurrently \"npm run start\" \"npm run start-navigation\" \"npm run start-landing\" \"npm run start-venta\" \"npm run start-alquiler\"",
+    "start-navigation": "cd ../navigation && npm run serve:single-spa:navigation",
+    "start-landing": "cd ../landing && npm run serve:single-spa:landing",
+    "start-venta": "cd ../venta && npm run serve:single-spa:venta",
+    "start-alquiler": "cd ../alquiler && npm run serve:single-spa:alquiler"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -18,7 +23,7 @@
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
     "@babel/runtime": "^7.15.3",
-    "concurrently": "^6.2.1",
+    "concurrently": "^6.5.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",

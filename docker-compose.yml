@@ -1,0 +1,22 @@
+version: "3"
+services:
+  baseapplication:
+    build: ./modulos/BaseApplication
+    ports:
+      - "9000:9000"
+  navigation:
+    build: ./modulos/navigation
+    ports:
+      - "9001:9001"
+  landing:
+    build: ./modulos/landing
+    ports:
+      - "9002:9002"
+  venta:
+    build: ./modulos/venta
+    ports:
+      - "9003:9003"
+  alquiler:
+    build: ./modulos/alquiler
+    ports:
+      - "9004:9004"
