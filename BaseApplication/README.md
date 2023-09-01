@@ -103,7 +103,7 @@ Se crearán dos nuevos scripts en el archivo *package.json* de la app hija:
 Este último nos servirá para levantar esta aplicación como single-spa.
 
 **NOTA:** si quisieramos modificar el puerto, deberíamos hacerlo en esa línea y además en el archivo **angular.json**, 
-en la línea **"deployUrl"**, donde ponga **localhost:9002** o el numero de puerto a cambiar.
+en la línea **"baseHref"**, donde ponga **localhost:9002** o el numero de puerto a cambiar.
 
 #### Directorio empty-route
 

@@ -107,7 +107,7 @@ Se crearán dos nuevos scripts en el archivo *package.json* de la app hija:
 Este último nos servirá para levantar esta aplicación como single-spa.
 
 **NOTA:** si quisieramos modificar el puerto, deberíamos hacerlo en esa línea y además en el archivo **angular.json**, 
-en la línea **"deployUrl"**, donde ponga **localhost:9002** o el numero de puerto a cambiar.
+en la línea **"baseHref"**, donde ponga **localhost:9002** o el numero de puerto a cambiar.
 
 #### Directorio empty-route
 
@@ -233,12 +233,18 @@ Vamos al navegador y abrimos:
 
 Y ahí podremos ver el contenido, esta vez sí,  de la aplicacion hija que está cargando por defecto, tal y como hemos establecido.
 
-
-
 ### Levantar la app hija como Standalone
 
 Para ello, solamente debemos levantar el proyecto usando el comando:
 
 ```
 npm run start:standalone
+
 ```
+
+
+## Estilos Globales
+
+Se ha creado un archivo **global-styles.scss** en la raíz de *BasicApplication/src* que contiene los estilos globales de todas las aplicaciones. Es importante nombrar los estilos de manera que no se solapen entre ellos. Por ejemplo usando como prefijo el nombre de la app para la que van destinados si son estios concretos.
+
+También hay que destacar que los archivos de estilos por defecto de las aplicaciones al crearlas no tendrán ningun tipo de uso, pueden prescindir de ellos.

@@ -38,6 +38,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
     "style-loader": "^3.3.1",
     "typescript": "~5.1.3"
   }

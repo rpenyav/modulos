@@ -13,7 +13,19 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    // modify the webpack config however you'd like to by adding to this object
+    module: {
+      rules: [
+        // ... (otras reglas que ya puedas tener)
+        {
+          test: /\.scss$/,
+          use: [
+            "style-loader", // Crea elementos de estilo en el DOM
+            "css-loader", // Traduce CSS en CommonJS
+            "sass-loader", // Compila Sass a CSS
+          ],
+        },
+      ],
+    },
     plugins: [
       new HtmlWebpackPlugin({
         inject: false,

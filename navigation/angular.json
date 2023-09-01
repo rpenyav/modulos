@@ -38,7 +38,7 @@
               "libraryName": "navigation",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:9001/"
+            "baseHref": "http://localhost:9001/"
           },
           "configurations": {
             "production": {
